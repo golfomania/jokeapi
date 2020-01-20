@@ -51,3 +51,8 @@ function buttonClicked(e) {
   xhr.send();
   e.preventDefault();
 }
+
+/* function timer */
+function timer(ms) {
+  return new Promise(res => setTimeout(res, ms));
+}
