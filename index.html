@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- CDN materialize CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- own CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Jokes to train with API</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- first card -->
+        <div
+          class="card green lighten-2 hoverable col s8 push-s2 card-content black-text"
+        >
+          <span class="card-title">get your Chuck Norris joke</span>
+          <div class="row">
+            <!-- how many -->
+            <div class="input-field col s12">
+              <input
+                placeholder="enter here"
+                name="how_much"
+                type="text"
+                class="white-text  green lighten-1"
+                id="howMany"
+              />
+              <label for="how_much" class="black-text">How many jokes?</label>
+            </div>
+            <!-- categories -->
+            <div class="col s12">
+              <h2 class="center-align">only these categorie(s)?</h2>
+              <form action="#" class="center-align" id="checkboxes">
+                <div class="row">
+                  <div class="col s3"></div>
+                  <div class="col s3">
+                    <label class="black-text">
+                      <input type="checkbox" id="expCat" />
+                      <span>explicit</span>
+                    </label>
+                  </div>
+                  <div class="col s3">
+                    <label class="black-text">
+                      <input type="checkbox" id="nerdCat" />
+                      <span>nerdy</span>
+                    </label>
+                  </div>
+                  <div class="col s3"></div>
+                </div>
+              </form>
+            </div>
+            <!-- submit button -->
+            <div class="col s12">
+              <button
+                class="btn waves-effect waves-light green darken-4 white-text right"
+                type="submit"
+                name="birthday"
+                id="submit_btn"
+              >
+                get jokes
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+
+      <!-- results -->
+      <div class="row" id="results">
+
+      <!-- container -->
+    </div>
+  </body>
+
+  <!-- CDN materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- own  -->
+  <script src="./JS/app.js"></script>
+</html>
