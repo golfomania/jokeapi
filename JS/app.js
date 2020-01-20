@@ -24,7 +24,7 @@ function buttonClicked(e) {
   if (categoryArr.length > 0) {
     catString = catText;
   }
-  let apiText = `http://api.icndb.com/jokes/random/${howMany.value}${catString}${categoryArr}`;
+  let apiText = `https://api.icndb.com/jokes/random/${howMany.value}${catString}${categoryArr}`;
 
   console.log(apiText);
 
